@@ -5,7 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShowSpot</title>
     <style>
-
+        body{
+            font-family: Arial, sans-serif;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10em;
+            margin-left:5%;
+        }
+        #menu {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 7em;
+            margin-right: 7%;
+            width: 100%;
+        }
+        .menu-item{
+            font-size: 20px;
+        }
+        #content {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 5em;
+            margin-top: 5%;
+            justify-items: center;
+            align-items: center;
+        }
+        .item-carrinho{
+            max-width: 20%;
+        }
+        .itens {
+            list-style: none;
+            padding: 0
+        }
     </style>
 </head>
 <body>
@@ -22,14 +57,18 @@
     </header>
     <div class="carrinho">
         <h2>Seu Carrinho</h2>
-        <ul>
+        <ul class="itens">
             <li>
-                <img src="baileunip.jpg" alt="Item 1">
+                <img src="baileunip.jpg" alt="Item 1" class="item-carrinho">
                 <span>BAILE UNIP</span>
+                <span>Qtde: </span>
+                <span>Valor: </span>
             </li>
             <li>
-                <img src="quintauniversitaria.png" alt="Item 2">
+                <img src="quintauniversitaria.png" alt="Item 2" class="item-carrinho">
                 <span>QUINTA UNIVERSITÁRIA</span>
+                <span>Qtde: </span>
+                <span>Valor: </span>
             </li>
         </ul>
     </div>
